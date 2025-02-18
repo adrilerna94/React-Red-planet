@@ -16,7 +16,12 @@ export default function MissionDayCounter({ dayCount, setDayCount }) {
   };
 
   const decrementDay = () => {
-    setDayCount((prevDayCount) => prevDayCount - 1);
+    setDayCount((prevDayCount) => {
+      if (prevDayCount === 1) {
+        return 1;
+      }
+      return prevDayCount - 1;
+    });
   };
 
   return (
