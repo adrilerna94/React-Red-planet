@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Primer Proyecto de React
 
-## Getting Started
+## Ejercicio 1: Componente de Bienvenida Personalizada
 
-First, run the development server:
+### Objetivo
+Crear un componente que salude al usuario por su nombre.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Instrucciones
+1. En la página principal, crear un componente `WelcomeMessage` que acepte un prop `name`.
+2. Mostrar un mensaje como:  
+   **"Bienvenido a la misión, [nombre]"**.
+3. Utilizar el componente pasando diferentes nombres como props.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Ejercicio 2: Lista de Tareas de la Misión
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Objetivo
+Implementar una lista simple de tareas utilizando estado local.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Instrucciones
+1. Crear un componente `TaskList` que tenga un estado inicial con algunas tareas predeterminadas.
+2. Crear un componente `Task` para mostrar cada una de las tareas.
+3. Mostrar las tareas en una lista ordenada.
+4. Añadir funcionalidad para marcar tareas como completadas cambiando su estilo (por ejemplo, tachando el texto).
